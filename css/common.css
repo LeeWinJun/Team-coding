@@ -1,0 +1,41 @@
+.inner {
+  width: 1800px;
+  margin: 0 auto;
+}
+.inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body {
+  background-color: #f6f5ef;
+  font-size: 16px;
+  color: #212121;
+}
+.inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a {
+  display: block;
+}
+.point {
+  color: #1e3932;
+}
+.gray {
+  color: #bdbdbd;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.title {
+  font-size: 48px;
+}
+.sub_title {
+  font-size: 32px;
+}
+.fll {
+  float: left;
+}
