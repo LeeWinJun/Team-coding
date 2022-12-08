@@ -2,29 +2,28 @@
   width: 1800px;
   margin: 0 auto;
 }
-.inner::after {
+.cf::after {
   content: "";
   display: block;
   clear: both;
 }
 body {
+  font-family: pretendard, sans-serif;
   background-color: #f6f5ef;
   font-size: 16px;
   color: #212121;
 }
-.inner::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-a {
-  display: block;
-}
 .point {
   color: #1e3932;
 }
-.gray {
-  color: #bdbdbd;
+.white{
+color:#FFFFFF;
+}
+.gray{
+color:#BCBCBC;
+}
+.bold{
+  font-weight:bold;
 }
 .icon {
   width: 24px;
