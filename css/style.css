@@ -257,7 +257,6 @@ aside {
 aside a{
   color: #bcbcbc;
 }
-
 .aside_gnb{
   margin-left:300px;
   position: absolute;
@@ -267,51 +266,34 @@ aside a{
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 65px;
-}
-.aside_gnb > li a{
   position: relative;
-  display: inline-block;
 }
-aside  li a:hover{
+.aside_gnb  li:hover{
   color: #fff;
   text-decoration: underline;
 }
-/* .aside_gnb > li a::before{
-  content:attr(data-text);
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #1e3932;
-  white-space: nowrap;  
-  overflow: hidden;
-  transition:0.2s ease-in;
-  width: 0;
+.aside_gnb li:hover > a{
+  color: #fff;
 }
-.aside_gnb > li a:hover::before{
-width: 100%;
-} */
-.aside_gnb li:hover .gnb_sub_depth{
+ .aside_gnb li:hover .gnb_sub_depth{
   display: block;
-}
+} 
 .aside_gnb .gnb_sub_depth{
   position: absolute;
-  left: 400px;
+  left: 350px;
   display: none;
   top: 40%;
   transform: translateY(-50%);
-  width: 250px;
+  
 }
 .aside_gnb .gnb_sub_depth li{
-  font-size: 32px;
-  margin-bottom: 50px;
-}
-.gnb_sub_depth li a:hover{
-  color: #fff;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 .aside_r_c{
   position: absolute;
   right: 60px;
-  bottom: 170px;
+  bottom: 100px;
 }
 .aside_r_c_depth li{
 margin-bottom: 20px;
@@ -328,13 +310,17 @@ text-align: right;
   text-indent: -9999px;
   overflow: hidden;
 }
-.sns_icon li:first-child{
+.aside_r_c_depth a:hover{
+  color: #fff;
+  text-decoration:underline;
+}
+.sns_icon li:first-child a{
   background: url(../images/instagram_icon.png) no-repeat;
 }
-.sns_icon li:nth-child(2){
+.sns_icon li:nth-child(2) a{
   background: url(../images/facebook_icon.png) no-repeat;
 }
-.sns_icon li:nth-child(3){
+.sns_icon li:nth-child(3) a{
   background: url(../images/youtube_icon.png) no-repeat;
 }
 .gnb_sub_depth li:last-child{
