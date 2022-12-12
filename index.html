@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
   <body>
     <!-- 이승준 -->
@@ -67,31 +66,36 @@
           </ul>
         </nav>
         <ul class="icon_depth">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li class="login_icon"><a href="#"></a></li>
+          <li class="lang_icon"><a href="#"></a>
+            <ul class="lang">
+              <li><a href="#">KOR</a></li>
+              <li><a href="#">ENG</a></li>
+              <li><a href="#">CHN</a></li>
+              <li><a href="#">JPN</a></li>
+            </ul>
+        </li>
+          <li class="menu_icon"><a href="#"></a></li>
         </ul>
       </div>
     </header>
     <div id="login">
       <div class="login_wrap">
-        <h1><img src="images/header_logo.png" alt="" /></h1>
-        <form action="">
-          <legend>
+        <h1 class="logo"><img src="images/header_logo.png" alt="" /></h1>
+        <form action="#">
             <p class="box_p">
               <label for="id_box">아이디</label>
               <i class="fa-solid fa-user"></i>
-              <input type="id" id="id_box" name="id_box" placeholder="아이디">
+              <input type="email" id="id_box" name="id_box" placeholder="아이디">
             </p>
             <p class="box_p">
               <label for="pw_box">비밀번호</label>
               <i class="fa-solid fa-lock"></i>
-              <input type="password"id="pw_box"name="pw_box"placeholder="비밀번호">
+              <input type="password" id="pw_box" name="pw_box" placeholder="비밀번호">
             </p>
-            <p class="login_btn_wrap">
-              <input class="login_btn" type="button" value="로그인">
+            <p class="login_btn_wrap ">
+              <input class="login_btn bold" type="button" value="로그인">
             </p>
-          </legend>
         </form>
         <ul class="sign">
           <li><a href="#">아이디 찾기</a></li>
@@ -99,93 +103,92 @@
           <li><a href="#">회원가입</a></li>
         </ul>
       </div>
-      <p><a href="">close</a></p>
+      <p class="close_btn"><a href="#@#@$%"><i class="fa-sharp fa-solid fa-xmark"></i></a></p>
     </div>
       <aside>
-        <div class="l_contents"></div>
-        <h1 class="logo"></h1>
-        <ul class="aside_gnb">
-          <li>
-            <a href="#">menu</a>
-            <ul class="gnb_sub_depth">
-              <li><a href="#">커피</a></li>
-              <li><a href="#">푸드</a></li>
-              <li><a href="#">굿즈</a></li>
-              <li><a href="#">메뉴이야기</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">reward</a>
-            <ul class="gnb_sub_depth">
-              <li><a href="#">스타벅스 리워드</a></li>
-              <li><a href="#">스타벅스 카드</a></li>
-              <li><a href="#">E-GIFT 카드</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">store</a>
-            <ul class="gnb_sub_depth">
-              <li><a href="#">드라이브 스루</a></li>
-              <li><a href="#">스타벅스 리저브</a></li>
-              <li><a href="#">커뮤니티 매장</a></li>
-              <li><a href="#">매장 이야기</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">culture</a>
-            <ul class="gnb_sub_depth">
-              <li><a href="#">사회공헌 캠페인</a></li>
-              <li><a href="#">최상의 커피</a></li>
-              <li><a href="#">커피 이야기</a></li>
-              <li><a href="#">리저브 매거진</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">what's new</a>
-            <ul class="gnb_sub_depth">
-              <li><a href="#">이벤트</a></li>
-              <li><a href="#">뉴스</a></li>
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">월페이퍼</a></li>
-            </ul>
-          </li>
-        </ul>
+        <h1 class="aside_logo"><img src="images/aside_logo.png" alt="starbucks"></h1>
+        <div class="l_contents">
+          <ul class="aside_gnb">
+            <li>
+              <a href="#" data-text="menu">menu</a>
+              <ul class="gnb_sub_depth">
+                <li><a href="#">커피</a></li>
+                <li><a href="#">푸드</a></li>
+                <li><a href="#">굿즈</a></li>
+                <li><a href="#">메뉴이야기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-text="reward">reward</a>
+              <ul class="gnb_sub_depth">
+                <li><a href="#">스타벅스 리워드</a></li>
+                <li><a href="#">스타벅스 카드</a></li>
+                <li><a href="#">E-GIFT 카드</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-text="store">store</a>
+              <ul class="gnb_sub_depth">
+                <li><a href="#">드라이브 스루</a></li>
+                <li><a href="#">스타벅스 리저브</a></li>
+                <li><a href="#">커뮤니티 매장</a></li>
+                <li><a href="#">매장 이야기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-text="culture">culture</a>
+              <ul class="gnb_sub_depth">
+                <li><a href="#">사회공헌 캠페인</a></li>
+                <li><a href="#">최상의 커피</a></li>
+                <li><a href="#">커피 이야기</a></li>
+                <li><a href="#">리저브 매거진</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-text="what's new">what's new</a>
+              <ul class="gnb_sub_depth">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">월페이퍼</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
         <div class="aside_r_c">
-          <ul class="aside_r_c _depth">
+          <ul class="aside_r_c_depth">
             <li><a href="#">찾아오시는 길</a></li>
             <li><a href="#">사이트맵</a></li>
             <li><a href="#">신규입점제의</a></li>
             <li><a href="#">수상내역</a></li>
           </ul>
           <ul class="sns_icon">
-            <li><a href="#">instagram</a></li>
-            <li><a href="#">facebook</a></li>
-            <li><a href="#">youtube</a></li>
+            <li><a href="https://www.instagram.com/starbuckskorea/?hl=ko">instagram</a></li>
+            <li><a href="https://ko-kr.facebook.com/starbuckskorea/">facebook</a></li>
+            <li><a href="https://www.youtube.com/user/starbuckskorea">youtube</a></li>
           </ul>
         </div>
+        <p class="close_btn_2"><a href="#@#@$%"><i class="fa-sharp fa-solid fa-xmark"></i></a></p>
       </aside>
-    </div>
-    <div id="main_sl">
-      <div class="main_sl_wrap">
+      <div id="main_sl_wrap">
         <ul>
-          <li><img src="images/main_banner_1.jpg" alt="carry the merry"></li>
+          <li><img src="images/main_banner_1v2.png" alt="carry the merry"></li>
           <li><img src="images/main_banner_2.png" alt="starbucks goods"></li>
           <li>
             <img src="images/main_banner_3.png" alt="너가 좋아하는걸 좋아해" />
           </li>
         </ul>
-      </div>
       <div class="sl_btn">
         <p class="prev_btn">
-          <a href="#^$#$%^"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+          <a href="#^$#$%^"><i class="fa-solid fa-angle-left"></i></a>
         </p>
         <p id="sl_count">1/3</p>
         <p class="next_btn">
-          <a href="#@@!$#"><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+          <a href="#@@!$#"><i class="fa-solid fa-angle-right"></i></i></a>
         </p>
       </div>
     </div>
-    <!-- 이승준 end -->
+    <!-- 이승준 // -->
     <!-- 박윤정 -->
     <div id="coffee">
       <div class="inner">
@@ -503,43 +506,94 @@
       let header = document.querySelector("header"),
         nav = document.querySelector("nav");
       header.addEventListener("mouseover", () => {
-        header.style.height = "300px";
+        header.style.height = "350px";
       });
       header.addEventListener("mouseout", () => {
         header.style.height = "80px";
+
       });
 
-      let slide = document.querySelector(".main_sl_wrap"),
-        slideWrap = document.querySelector(".main_sl_wrap > ul"),
-        slideImg = document.querySelectorAll(".main_sl_wrap > ul > li"),
+      let slide = document.querySelector("#main_sl_wrap"),
+        slideWrap = document.querySelector("#main_sl_wrap > ul"),
+        slideImg = document.querySelectorAll("#main_sl_wrap > ul > li"),
         slideCount = slideImg.length,
         prev = document.querySelector(".prev_btn"),
         next = document.querySelector(".next_btn"),
         currentIndex = 0;
 
-      slideWrap.style.width = slide.offsetWidth * slideCount + "px";
-
-      for (item of slideImg) {
-        item.style.width = `${slide.offsetWidth}px`;
-      }
-
+      slideWrap.style.width=`${slide.offsetWidth * slideCount}vw`;
       function gotoSlide(idx) {
         if (idx > slideCount - 1) {
           idx = 0;
         } else if (idx < 0) {
           idx = slideCount - 1;
         }
-        slide.style.left = `${-idx * 100}%`;
+        slideWrap.style.transform = `translateX(${-idx * 100}vw)`;
         currentIndex = idx;
         console.log(currentIndex + 1);
         document.getElementById("sl_count").innerHTML = currentIndex + 1 + "/3";
       }
 
-      next.addEventListener("click", (e) => {
+      next.addEventListener("click", () => {
         gotoSlide(++currentIndex);
       });
-      prev.addEventListener("click", (e) => {
+      prev.addEventListener("click", () => {
         gotoSlide(--currentIndex);
+      });
+
+      let login = document.querySelector(".login_icon"),
+      loginPage = document.querySelector("#login"),
+      close = document.querySelector(".close_btn"),
+      loginWrap=document.querySelector(".login_wrap");
+
+      login.addEventListener("click",(e)=>{
+        loginPage.style.height="100vh";
+        loginPage.style.visibility= "visible";
+        loginPage.style.opacity="1";
+      });
+      close.addEventListener("click",()=>{
+        loginPage.style.height="0";
+        loginPage.style.visibility= "hidden";
+        loginPage.style.opacity="0";
+      });
+
+      let aside =document.querySelector('aside'),
+      menu= document.querySelector('.menu_icon'),
+      close2 = document.querySelector('.close_btn_2');
+      menu.addEventListener('click',()=>{
+        aside.style.right="0";
+        aside.style.opacity="1";
+        aside.style.visibility="visible";
+      });
+      close2.addEventListener("click",()=>{
+        aside.style.right="-100%";
+        aside.style.opacity="0";
+        aside.style.visibility="hidden";
+      });
+      let asideGnb = document.querySelector(".aside_gnb"),
+      asideGndList=document.querySelectorAll(".aside_gnb > li"),
+      asideSubdepth=document.querySelectorAll(".gnb_sub_depth"),
+      asideSubdepthList=document.querySelectorAll(".gnb_sub_depth > li");
+    
+      asideGnb.addEventListener("mouseover",()=>{
+        asideGnb.style.width="600px";
+      });
+      asideGnb.addEventListener("mouseout",()=>{
+        asideGnb.style.width="350px";
+      });
+
+      let lang = document.querySelector(".lang_icon"),
+      langList = document.querySelector(".lang");
+
+      lang.addEventListener("mouseover",()=>{
+        langList.style.height="131px";
+        langList.style.visibility="visible";
+        langList.style.opacity="1";
+      });
+      lang.addEventListener("mouseout",()=>{
+        langList.style.height="0%";
+        langList.style.visibility="hidden";
+        langList.style.opacity="0";
       });
     </script>
   </body>
